@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 
+app.get('/product', function (req, res) {
+  res.send('productPage');
+})
+
 app.get('/', function (req, res) {
   res.send('homePage');
 })
