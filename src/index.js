@@ -30,6 +30,10 @@ app.get('/reg', function (req, res) {
   res.render('reg');
 })
 
+app.get('/vendor', function (req, res) {
+  res.render('vendor');
+})
+
 app.listen(7000, function() {
     console.log("This port is up on 7000");
 })
