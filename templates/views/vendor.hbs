@@ -4,41 +4,278 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vendor</title>
+        <title>GlobalTrade</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/style.css">
+        
 </head>
 
 <body>
-        <nav>
-                <div class="left dflex">
-                        <a href="#"><img src="img/gtc.jpg" alt="logo" class="logo"></a>
+        <header>
+                <div class="header-left">
+                        
+                        <img src="img/globe.jpg" class="imgLogo">
+                        <p class="imgLogo"><span>G</span>lobal<span>T</span>rade</p>
                 </div>
-                <div class="item">
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Hello,</p>
-                        <h5>User</h5>
+                <div class="header-center">
+                        <input class="header-center-input" type="text" placeholder="Search for products, brands and more.."><i class="fa fa-search"></i>
                 </div>
-                <div class="searchBox dflex">
-                        <div class="box">
-                                <div class="dflex">
-                                        <button class="all" type="button">
-                                                All<i class="fa fa-sort-desc"></i>
-                                        </button>
-                                        <input type="text">
-                                        <button class="search" type="submit">
-                                                <i class="fa fa-search"></i>
-                                        </button>
+                <div class="header-right">
+                        <a class="active" href="#">Login</a>
+                        <a href="#">more<i class="fa fa-sort-desc"></i></a>
+                        <a href="#">cart<i class="fa fa-shopping-cart"></i></a>
+                </div>
+               
+                        
+        </header>
+        {{!-- category section --}}
+        {{!-- <section>
+                <div class="category-row">
+                        <div class ="category-col">
+                                <img src="img/electronics.webp" alt="">
+                                <h5>Electronics</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/appliances.webp" alt="">
+                                <h5>Appliances</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/fashion.webp" alt="">
+                                <h5>Fashion</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/grocery.webp" alt="">
+                                <h5>Grocery</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/mobiles.webp" alt="">
+                                <h5>Mobiles</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/offer.webp" alt="">
+                                <h5>Offers</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/sofa.webp" alt="">
+                                <h5>Sofa</h5>
+                        </div>
+                        <div class ="category-col">
+                                <img src="img/toys.webp" alt="">
+                                <h5>Toys</h5>
+                        </div>
+                        </div>
+                        </section>
+                        banner section --}}
+        <section>
+                <div class="banner">
+                        <div class="slider">
+                                <img src="img/group.webp">
+                                <img src="img/nature.webp">
+                                <img src="img/bag.webp">
+                                {{!-- <img src="img/cloth.webp"> --}}
+
+
+                        </div>
+                </div>
+        </section>
+                <div class="card">
+                        <div class="common-heading">
+                                <div class="common-heading-left">
+                                        <h1>Best Battery phones</h1>
+                                        <h2>More than 4000mAh</h2>
+
+                                </div>
+                                <div>
+                                        <div class="common-heading-right"></div>
+                                        <button>View all</button>
                                 </div>
                         </div>
-                </div>
-
-                <div class="right dflex">
-                        <div class="item">
-                                <i class="fa fa-flag"></i><i class="fa fa-sort-desc"></i>
-
+                        <div class="common-row">
+                                <div class="common-col">
+                                        <img src="img/tshirt.webp" alt="mobile">
+                                        <h3>T-Shirt</h2>
+                                        <h4>new launcher</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                {{!-- <div class="common-col">
+                                        <img src="img/mobile2.webp" alt="mobile">
+                                        <h3>APPLE iPhone</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,000</h6>
+                                </div> --}}
+                                <div class="common-row">
+                                <div class="common-col">
+                                        <img src="img/headset.webp" alt="mobile">
+                                        <h3>Boult Bluetooth Headset</h2>
+                                        <h4>new launcher</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobi.webp" alt="mobile">
+                                        <h3>SAMSUNG Galaxy F22</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                 {{!-- <div class="common-col">
+                                        <img src="img/mobi.webp" alt="mobile">
+                                        <h4>SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile3.webp" alt="mobile">
+                                        <h4>Infinix Hot 11S (Polar Black, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile1.webp" alt="mobile">
+                                        <h2>Poco m2 pro</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile1.webp" alt="mobile">
+                                        <h2>Poco m2 pro</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div> --}}
                         </div>
                 </div>
-        </nav>
+        </section>
+        {{!-- headphone and speaker section --}}
+        <section>
+                <div class="card">
+                     <div class="common-heading">
+                        <div class="common-heading-left">
+                                <h1>Top deals on Electronics</h1>
+                                        <h2>Up to 70% OFF</h2>
+                        </div>
+                        <div class="common-heading-right">
+                                <button>View all</button>
+                        </div>
+                     </div>  
+                      <div class="common-row">
+                                <div class="common-col">
+                                        <img src="img/headset.webp" alt="mobile">
+                                        <h2>Boult Audio Bass curve pro Bluetooth Headset</h2>
+                                        <h4>new launcher</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile2.webp" alt="mobile">
+                                        <h2>APPLE iPhone 11 (Green, 64 GB)</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile3.webp" alt="mobile">
+                                        <h2>Infinix Hot 11S (Polar Black, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobi.webp" alt="mobile">
+                                        <h2>SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                 <div class="common-col">
+                                        <img src="img/mobi.webp" alt="mobile">
+                                        <h2>SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile3.webp" alt="mobile">
+                                        <h2>Infinix Hot 11S (Polar Black, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile1.webp" alt="mobile">
+                                        <h2>Poco m2 pro</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile1.webp" alt="mobile">
+                                        <h2>Poco m2 pro</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                        </div> 
+                </div>
+        </section>
+{{!-- mens clothing --}}
+<section>
+                <div class="card">
+                     <div class="common-heading">
+                        <div class="common-heading-left">
+                                <h1>Top Picks On Men's Clothing</h1>
+                                        <h2>Up to 50% OFF</h2>
+                        </div>
+                        <div class="common-heading-right">
+                                <button>View all</button>
+                        </div>
+                     </div>  
+                      <div class="common-row">
+                                <div class="common-col">
+                                        <img src="img/tshirt.webp" alt="mobile">
+                                        <h2>Pack of 2 Striped Men Round Neck Multicolor T-Shirt</h2>
+                                        <h4>new launcher</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile2.webp" alt="mobile">
+                                        <h2>APPLE iPhone 11 (Green, 64 GB)</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile3.webp" alt="mobile">
+                                        <h2>Infinix Hot 11S (Polar Black, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobi.webp" alt="mobile">
+                                        <h2>SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                 <div class="common-col">
+                                        <img src="img/mobi.webp" alt="mobile">
+                                        <h2>SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile3.webp" alt="mobile">
+                                        <h2>Infinix Hot 11S (Polar Black, 64 GB)  (4 GB RAM)</h2>
+                                        <h4>4000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>41,999</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile1.webp" alt="mobile">
+                                        <h2>Poco m2 pro</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                                <div class="common-col">
+                                        <img src="img/mobile1.webp" alt="mobile">
+                                        <h2>Poco m2 pro</h2>
+                                        <h4>5000mAh Battery</h4>
+                                        <h6>Now <i class="fa fa-inr"></i>13000</h6>
+                                </div>
+                        </div> 
+                </div>
+        </section>
+        
 </body>
+
+
 
 </html>

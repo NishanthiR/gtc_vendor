@@ -1,0 +1,16 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+
+#alpha1 {
+        position: absolute;
+        left: 150px;
+        top:85px;
+        display: inline-block;
+        font-size: 750px;
+        font-weight: bolder;
+        font-stretch: ultra-expanded;
+        transform: rotate(336dg);
+        color: cyan;
+}
