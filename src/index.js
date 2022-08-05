@@ -55,22 +55,17 @@ app.get('/vendor', function (req, res) {
   });
 })
 
-<<<<<<< HEAD
+
 app.get('/vendor1', function (req, res) {
   res.render('vendor');
 })
-=======
-<<<<<<< HEAD
+
+
 app.get('/cart', function (req, res) {
   res.render('cart');
 })
 
-app.listen(7000, function() {
-    console.log("This port is up on 7000");
-=======
->>>>>>> 858dc4c420d00363490c31f8a572c005747afab8
 
 app.listen(7000, function () {
   console.log("This port is up on 7000");
->>>>>>> d575e3d2faf766491e22063614f82dd3e5e1c200
 })
