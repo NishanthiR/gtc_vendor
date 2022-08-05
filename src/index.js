@@ -34,6 +34,10 @@ app.get('/vendor', function (req, res) {
   res.render('vendor');
 })
 
+app.get('/cart', function (req, res) {
+  res.render('cart');
+})
+
 app.listen(7000, function() {
     console.log("This port is up on 7000");
 })
