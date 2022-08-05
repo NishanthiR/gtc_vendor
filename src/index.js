@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const hbs = require('hbs');
+const hbs = require("hbs");
 const bodyParser = require("body-parser");
 
 const routes = require("./routes");
@@ -18,8 +18,8 @@ hbs.registerPartials(partialPath);
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.get('/product', function (req, res) {
-  res.send('productPage');
+app.get('/product/4321', function (req, res) {
+  res.render('productPage');
 })
 
 app.get('/login', function (req, res) {
