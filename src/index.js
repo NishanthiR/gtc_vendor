@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const hbs = require('hbs');
+const request = require('request');
 const bodyParser = require("body-parser");
 
 const routes = require("./routes");
@@ -31,9 +32,20 @@ app.get('/reg', function (req, res) {
 })
 
 app.get('/vendor', function (req, res) {
-  res.render('vendor');
+  request('http://localhost:4000/api/category', function (error, response, body) {
+    if (error) {
+      console.error('error:', error);
+      res.status(500).send('Unable to render page');
+      return;
+    }
+    console.log('body:', body);
+    res.render('rough' , {
+      categories: JSON.parse(body)
+    });
+  });
 })
 
-app.listen(7000, function() {
-    console.log("This port is up on 7000");
+
+app.listen(7000, function () {
+  console.log("This port is up on 7000");
 })
