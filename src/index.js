@@ -49,17 +49,11 @@ app.get('/vendor', function (req, res) {
       return;
     }
     console.log('body:', body);
-    res.render('rough', {
+    res.render('vendor', {
       categories: JSON.parse(body)
     });
   });
 })
-
-
-app.get('/vendor1', function (req, res) {
-  res.render('vendor');
-})
-
 
 app.get('/cart', function (req, res) {
   res.render('cart');
@@ -68,4 +62,5 @@ app.get('/cart', function (req, res) {
 
 app.listen(7000, function () {
   console.log("This port is up on 7000");
+
 })
