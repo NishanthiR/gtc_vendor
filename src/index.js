@@ -1,7 +1,9 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const hbs = require('hbs');
+
+const hbs = require("hbs");
+
 const request = require('request');
 const bodyParser = require("body-parser");
 
@@ -35,6 +37,10 @@ app.get('/product/62e505d787ec8648960f75b3', function (req, res) {
 
 app.get('/login', function (req, res) {
   res.render('login');
+})
+
+app.get('/addAddress', function (req, res) {
+  res.render('addAddress');
 })
 
 app.get('/reg', function (req, res) {
