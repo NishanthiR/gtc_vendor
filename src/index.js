@@ -61,10 +61,6 @@ app.get('/vendor', function (req, res) {
   });
 })
 
-app.get('/vendor1', function (req, res) {
-  res.render('vendor');
-})
-
 
 app.get('/cart', function (req, res) {
   res.render('cart');
