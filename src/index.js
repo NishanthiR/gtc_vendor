@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const hbs = require('hbs');
+const hbs = require("hbs");
 const bodyParser = require("body-parser");
 
 const routes = require("./routes");
@@ -24,6 +24,10 @@ app.get('/product', function (req, res) {
 
 app.get('/login', function (req, res) {
   res.render('login');
+})
+
+app.get('/addAddress', function (req, res) {
+  res.render('addAddress');
 })
 
 app.get('/reg', function (req, res) {
