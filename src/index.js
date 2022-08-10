@@ -1,7 +1,9 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const hbs = require('hbs');
+
+const hbs = require("hbs");
+
 const request = require('request');
 const bodyParser = require("body-parser");
 
@@ -37,6 +39,10 @@ app.get('/login', function (req, res) {
   res.render('login');
 })
 
+app.get('/addAddress', function (req, res) {
+  res.render('addAddress');
+})
+
 app.get('/reg', function (req, res) {
   res.render('reg');
 })
@@ -55,9 +61,6 @@ app.get('/vendor', function (req, res) {
   });
 })
 
-app.get('/vendor1', function (req, res) {
-  res.render('vendor');
-})
 
 app.get('/cart', function (req, res) {
   res.render('cart');
@@ -65,4 +68,5 @@ app.get('/cart', function (req, res) {
 
 app.listen(7000, function () {
   console.log("This port is up on 7000");
+
 })
