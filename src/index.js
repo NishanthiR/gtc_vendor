@@ -21,8 +21,8 @@ hbs.registerPartials(partialPath);
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.get('/product/62e505d787ec8648960f75b3', function (req, res) {
-  request('http://localhost:4000/api/product/62e505d787ec8648960f75b3', function (error, response, body) {
+app.get('/product/:id', function (req, res) {
+  request(`http://localhost:4000/api/product/${req.params.id}`, function (error, response, body) {
     if (error) {
       console.error('error:', error);
       res.status(500).send('Unable to render page');
@@ -65,7 +65,7 @@ app.get('/vendor', function (req, res) {
     console.log('body:', body);
     res.render('vendor', {
       categories: JSON.parse(body)
-    });
+    })
   });
 })
 
