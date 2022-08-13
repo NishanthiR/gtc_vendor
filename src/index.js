@@ -43,6 +43,14 @@ app.get('/addAddress', function (req, res) {
   res.render('addAddress');
 })
 
+app.get('/addAddress1', function (req, res) {
+  res.render('addAddress1');
+})
+
+app.get('/address', function (req, res) {
+  res.render('address');
+  })
+
 app.get('/reg', function (req, res) {
   res.render('reg');
 })
