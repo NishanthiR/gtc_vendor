@@ -9,12 +9,12 @@ body{
    }
 
    .cart-page{
-    width: 70%;
+    width: 150%;
     height: 85%;
     background-color: #ffffff;
-     /* border-radius: 20px;  */
+     border-radius: -10px;  
     /* box-shadow: 0px 25px 40px #1687d933; */
-   }
+    }  
 
    .Header{
     margin: auto;
@@ -101,3 +101,24 @@ td a{
     color: red;
     font-size: 15px;
 }
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: ;
+
+}
+.total-price table{
+    border-top: 3px solid red;
+    width: 50%;
+    max-width: 50px;
+    text-align: end;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+

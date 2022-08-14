@@ -48,7 +48,7 @@ app.get('/reg', function (req, res) {
 })
 
 app.get('/vendor', function (req, res) {
-  request('http://localhost:4000/api/category', function (error, response, body) {
+  request('http://localhost:4000/api/category/62e81c36e3a7dfa42b74cf5c', function (error, response, body) {
     if (error) {
       console.error('error:', error);
       res.status(500).send('Unable to render page');
