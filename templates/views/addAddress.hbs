@@ -4,9 +4,11 @@
         <title>Add Address</title>
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/addAddress.js"></script>
+        <link rel="stylesheet" href="css/address.css">
 </head>
 
 <body>
+        
         <form id="addressForm">
                 <center>
                 <button id="backBtn">Back</button>
@@ -47,18 +49,27 @@
                 <br>
                 <br>
                 <label>Town/City</label>
-                <input type="text" id="state_id">
+                <input type="text" id="City">
+                <label>State:</label>
+                <select id="state_id">
+                        <option selected="true" disabled="disabled">Choose a state</option>
+                        <option>Tamilnadu</option>
+                        <option>Karnataka</option>
+                        <option>Telangana</option>
+                        <option>Andrapradesh</option>
+                </select>
                 <br>
                 <br>
                 <input type="checkbox">Make this my default address
                 <br>
                 <br>
                 <h4>Add delivery instructions</h4>
-                <p>Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later
-                        than planned.</p>
+                <p>Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned.</p>
                 <h5>Address Type</h5>
                 <select>
                         <option selected="true" disabled="disabled">Select an Address Type</option>
+                        <option>Home(7am - 9pm delivey)</option>
+                        <option>Office/Commercial(10am - 6pm delivey)</option>
                 </select>
                 <br>
                 <br>

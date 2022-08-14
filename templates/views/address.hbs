@@ -1,0 +1,185 @@
+<html>
+
+<head>
+        <title>Address</title>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/address.js"></script>
+        <link rel="stylesheet" href="css/address.css">
+</head>
+
+<body>
+        <nav>
+                <div class="left dflex">
+                        <div class="header-left">
+                        {{!-- <img src="img/globe.jpg" class="imgLogo"> --}}
+                        <p class="imgLogo"><span>G</span>lobal<span>T</span>rade</p>
+                </div>
+                        <div class="item">
+                                <p><i class="fa fa-map-marker"></i>
+                                        Hello,</p>
+                                <h5>User</h5>
+                        </div>
+                </div>
+                <div class="searchBar dflex">
+                        <div class="box">
+                                <div class="dflex">
+
+                                        <select class="all">
+                                                {{!-- <option>All</option> --}}
+                                                {{#each categories}}
+                                                <option>{{this.name}}</option>
+                                                {{/each}}
+                                        </select>
+                                        {{!-- <button class="all" type="button">
+                                                All
+                                        </button> --}}
+                                        <input type="text">
+                                        <button class="search" type="submit">
+                                                <i class="fa fa-search"></i>
+                                        </button>
+                                </div>
+                        </div>
+                </div>
+                <div class="right dflex">
+                        <div class="item">
+                                <p><i class="fa fa-sign-in"></i>
+                                        Sign In Account</p>
+                        </div>
+                </div>
+        </nav>
+        <form id="address">
+                <h2>Most recently used</h2>
+                <div>
+                        <h4>User1</h4>
+                        <p>No:1, 1st block, Abc street</p>
+                        <p>XYZ Apartment, Bangalore</p>
+                        <p>Karnataka, India - 568989</p>
+                        <a href="/Add delivery instructions" style="text-decoration:none">Add delivery instructions</a>
+                        <br>
+                        <input type="Submit" value="Delivery to this address" id="delivery">
+                        <br>
+                        <br>
+                        <input type="Submit" value="Edit">
+                        <input type="Submit" value="Delete">
+                </div>
+                <br>
+                <br>
+                <div class="addr2">
+                        <h4>User2</h4>
+                        <p>No:2, 2st block, CDE street</p>
+                        <p>HBG Apartment, Chennai</p>
+                        <p>Tamilnadu, India - 600980</p>
+                        <a href="/Add delivery instructions" style="text-decoration:none">Add delivery instructions</a>
+                        <br>
+                        <input type="Submit" value="Delivery to this address" id="delivery">
+                        <br>
+                        <br>
+                        <input type="Submit" value="Edit">
+                        <input type="Submit" value="Delete">
+                </div>
+                <h2>Other addresses</h2>
+                <div>
+                        <h4>User3</h4>
+                        <p>No:3, 3st block, HJK street</p>
+                        <p>Leela Apartment, kanchipuram</p>
+                        <p>Tamilnadu, India - 668989</p>
+                        <a href="/Add delivery instructions" style="text-decoration:none">Add delivery instructions</a>
+                        <br>
+                        <input type="Submit" value="Delivery to this address" id="delivery">
+                        <br>
+                        <br>
+                        <input type="Submit" value="Edit">
+                        <input type="Submit" value="Delete">
+                </div>
+                <div class="addr4">
+                        <h4>User4</h4>
+                        <p>No:4, 4st block, Node street</p>
+                        <p>Friends Apartment, Chennai</p>
+                        <p>Tamilnadu, India - 609980</p>
+                        <a href="/Add delivery instructions" style="text-decoration:none">Add delivery instructions</a>
+                        <br>
+                        <br>
+                        <input type="Submit" value="Delivery to this address" id="delivery">
+                        <br>
+                        <br>
+                        <input type="Submit" value="Edit">
+                        <input type="Submit" value="Delete">
+                </div>
+                <div class="addr5">
+                        <h4>User5</h4>
+                        <p>No:5, 5st block,Raj street</p>
+                        <p>Sai Apartment, Vellore</p>
+                        <p>Tamilnadu, India - 635980</p>
+                        <a href="/Add delivery instructions" style="text-decoration:none">Add delivery instructions</a>
+                        <br>
+                        <br>
+                        <input type="Submit" value="Delivery to this address" id="delivery">
+                        <br>
+                        <br>
+                        <input type="Submit" value="Edit">
+                        <input type="Submit" value="Delete">
+                </div>
+        </form>
+        </section>
+        <div>
+                <h2 class="back_top">Back to Top</h2>
+        </div>
+        <footer>
+                <div class="footer_inner">
+                        <div class="footer_width">
+                                <h3>Get to Know Us</h3>
+                                <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Press Releases</a></li>
+                                        <li><a href="#">Globaltrade Cares</a></li>
+                                        <li><a href="#">Gift a Smile</a></li>
+                                        <li><a href="#">Globaltrade Science</a></li>
+
+                                </ul>
+                        </div>
+
+                        <div class="footer_width">
+                                <h3>Connect with Us</h3>
+                                <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                </ul>
+                        </div>
+
+                        <div class="footer_width">
+                                <h3>Make Money with Us</h3>
+                                <ul>
+                                        <li><a href="#">Sell on Amazon</a></li>
+                                        <li><a href="#">Sell under Amazon Accelerator</a></li>
+                                        <li><a href="#">Amazon Global Selling</a></li>
+                                        <li><a href="#">Become an Affiliate</a></li>
+                                        <li><a href="#">Fulfilment by Amazon</a></li>
+                                        <li><a href="#">Advertise Your Products</a></li>
+                                        <li><a href="#">Amazon Pay on Merchants</a></li>
+                                </ul>
+                        </div>
+
+                        <div class="footer_width">
+                                <h3>Let Us Help You</h3>
+                                <ul>
+                                        <li><a href="#">COVID-19 and Amazon</a></li>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Returns Centre</a></li>
+                                        <li><a href="#">100% Purchase Protection</a></li>
+                                        <li><a href="#">Amazon App Download</a></li>
+                                        <li><a href="#">Amazon Assistant DownloadHelp</a></li>
+                                </ul>
+                        </div>
+                </div>
+        </footer>
+        <div>
+                <p class="footer_down"><span>G</span>lobal<span>T</span>rade</p>
+                {{!-- <h2 class="footer_down">Global Trade</h2> --}}
+        </div>
+        </div>
+
+</body>
+
+</html>

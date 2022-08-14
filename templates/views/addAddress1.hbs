@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GlobalTrade</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+        {{!--
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> --}}
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap"
+                rel="stylesheet">
+        {{!--
+        <link rel="stylesheet" href="css/vendor.css"> --}}
+        <link rel="stylesheet" href="css/addAddress.css">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+        <nav>
+                <div class="left dflex">
+                        <div class="header-left">
+                        {{!-- <img src="img/globe.jpg" class="imgLogo"> --}}
+                        <p class="imgLogo"><span>G</span>lobal<span>T</span>rade</p>
+                </div>
+                        <div class="item">
+                                <p><i class="fa fa-map-marker"></i>
+                                        Hello,</p>
+                                <h5>User</h5>
+                        </div>
+                </div>
+                <div class="searchBar dflex">
+                        <div class="box">
+                                <div class="dflex">
+
+                                        <select class="all">
+                                                {{!-- <option>All</option> --}}
+                                                {{#each categories}}
+                                                <option>{{this.name}}</option>
+                                                {{/each}}
+                                        </select>
+                                        {{!-- <button class="all" type="button">
+                                                All
+                                        </button> --}}
+                                        <input type="text">
+                                        <button class="search" type="submit">
+                                                <i class="fa fa-search"></i>
+                                        </button>
+                                </div>
+                        </div>
+                </div>
+                <div class="right dflex">
+                        <div class="item">
+                                <p><i class="fa fa-sign-in"></i>
+                                        Sign In Account</p>
+                        </div>
+                </div>
+        </nav>
+         <form id="addressForm">
+                <center>
+                {{!-- <button id="backBtn">Back</button> --}}
+                <h2>Add new address</h2>
+                <label>Country/Region:</label>
+                <br>
+                <select id="country_id">
+                        <option selected="true" disabled="disabled">Select</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Australia</option>
+                        <option>Canada</option>
+                </select>
+                <br>
+                <br>
+                <label>Full name</label>
+                <br>
+                <input type="text" id="user_id">
+                <br>
+                <br>
+                <label>Mobile number:</label>
+                <br>
+                <input type="number" id="mobNumber">
+                <br>
+                <br>
+                <label>Pincode:</label>
+                <br>
+                <input type="number" id="pin_code" placeholder="6 digits [0-9] PIN code">
+                <br>
+                <br>
+                <label>Flat, House no., Building, Company, Apartment</label>
+                <br>
+                <input type="text" id="door_no">
+                <br>
+                <br>
+                <label>Area, Street, Sector, Village</label>
+                <br>
+                <input type="text" id="street">
+                <br>
+                <br>
+                <label>Landmark</label>
+                <br>
+                <input type="text" placeholder="E.g.near apollo college" id="near_by">
+                <br>
+                <br>
+                <label>Town/City</label>
+                <br>
+                <input type="text" id="City">
+                <br>
+                <label>State:</label>
+                <br>
+                <select id="state_id">
+                        <option selected="true" disabled="disabled">Choose a state</option>
+                        <option>Tamilnadu</option>
+                        <option>Karnataka</option>
+                        <option>Telangana</option>
+                        <option>Andrapradesh</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" id="checkbox">Make this my default address
+                <br>
+                <br>
+                <h4>Add delivery instructions</h4>
+                <br>
+                <p>Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned.</p>
+                <br>
+                <h5>Address Type</h5>
+                <br>
+                <select id="typehr">
+                        <option selected="true">Select an Address Type</option>
+                        <option>Home(7am - 9pm delivey)</option>
+                        <option>Office/Commercial(10am - 6pm delivey)</option>
+                </select>
+                <br>
+                <br>
+                <input type="Submit" value="Add address" id="submit">
+                </center>
+        </form>
+        </section>
+                <div>
+                        <h2 class="back_top">Back to Top</h2>
+                </div>
+                <footer>
+                        <div class="footer_inner">
+                                <div class="footer_width">
+                                        <h3>Get to Know Us</h3>
+                                        <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Careers</a></li>
+                                                <li><a href="#">Press Releases</a></li>
+                                                <li><a href="#">Globaltrade Cares</a></li>
+                                                <li><a href="#">Gift a Smile</a></li>
+                                                <li><a href="#">Globaltrade Science</a></li>
+
+                                        </ul>
+                                </div>
+
+                                <div class="footer_width">
+                                        <h3>Connect with Us</h3>
+                                        <ul>
+                                                <li><a href="#">Facebook</a></li>
+                                                <li><a href="#">Twitter</a></li>
+                                                <li><a href="#">Instagram</a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="footer_width">
+                                        <h3>Make Money with Us</h3>
+                                        <ul>
+                                                <li><a href="#">Sell on Amazon</a></li>
+                                                <li><a href="#">Sell under Amazon Accelerator</a></li>
+                                                <li><a href="#">Amazon Global Selling</a></li>
+                                                <li><a href="#">Become an Affiliate</a></li>
+                                                <li><a href="#">Fulfilment by Amazon</a></li>
+                                                <li><a href="#">Advertise Your Products</a></li>
+                                                <li><a href="#">Amazon Pay on Merchants</a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="footer_width">
+                                        <h3>Let Us Help You</h3>
+                                        <ul>
+                                                <li><a href="#">COVID-19 and Amazon</a></li>
+                                                <li><a href="#">Your Account</a></li>
+                                                <li><a href="#">Returns Centre</a></li>
+                                                <li><a href="#">100% Purchase Protection</a></li>
+                                                <li><a href="#">Amazon App Download</a></li>
+                                                <li><a href="#">Amazon Assistant DownloadHelp</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </footer>
+                <div>
+                        <p class="footer_down"><span>G</span>lobal<span>T</span>rade</p>
+                        {{!-- <h2 class="footer_down">Global Trade</h2> --}}
+                </div>
+        </div>
+
+</body>
+</html>
