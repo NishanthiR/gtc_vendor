@@ -1,3 +1,22 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -105,15 +124,13 @@ td a{
 .total-price{
     display: flex;
     justify-content: flex-end;
-    text-align: right;
-    width: ;
+    /* text-align: right; */
 
 }
 .total-price table{
     border-top: 3px solid red;
-    width: 50%;
-    max-width: 50px;
-    text-align: end;
+    width: 100%;
+    max-width: 370px;
 }
 td:last-child{
     text-align: right;
@@ -121,4 +138,92 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
+/* footer {
+    padding: 10px 10px 20px 50px;
+    background-color: #172337;
+    columns: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+ 
+ footer .footer_inner {
+    display: flex;
+ }
+ 
+ footer .footer_inner .footer_width {
+    width: 20%;
+ }
+ 
+ footer .footer_inner ul li a {
+    color: #fff;
+    margin: 5px 0;
+    text-decoration: none;
+ 
+ }
+ 
+ footer .footer_inner ul a {
+    color: #fff;
+    margin: 10px 0;
+    font-size: 14px;
+    padding: 10px 10px 10px -10px;
+    line-height: 2;
+ 
+ }
+ 
+ footer .footer_inner h3 {
+    color: #878787;
+    margin-bottom: 5px;
+ }
+ 
+ ul {
+    list-style-type: none;
+ }
+ 
+ .footer_down {
+    background-color: #102447;
+    height: 50px;
+    width: 50%;
+    color: #fff;
+    text-align: 50px;
+    font-size: 20px;
+    padding: 40px;
+ }
+ 
+ .header-left {
+    width: 20%;
+    text-align: right;
+    margin: 5px 0;
+    cursor: pointer;
+ }
+ 
+ .header-left a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+ }
+ 
+ .imgLogo {
+    color: #fff;
+    margin: 0;
+    /* text-transform: uppercase; */
+    /* text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 50px;
+    /* margin-left: 0px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 150px;
+    margin-right: 150px;
+    margin-left: 15px;
+    border-radius: 20px;
+ } */
+ 
+ /* span {
+    color: rgb(18, 223, 52);
+ } */ 
 
